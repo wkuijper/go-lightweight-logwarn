@@ -1,27 +1,17 @@
 package logwarn
 
-import (
-	"fmt"
-	"io"
-	"os"
-)
-
 type LogSink interface {
-	Log(level string, format string, args ...any)
+	// DISABLED
 }
 
 func F(format string, args ...any) {
-	fmt.Fprintf(os.Stdout, "WARNING: ")
-	fmt.Fprintf(os.Stdout, format, args...)
-	fmt.Fprintln(os.Stdout, "")
+	// DISABLED
 }
 
 func FF(out io.Writer, format string, args ...any) {
-	fmt.Fprintf(out, "WARNING: ")
-	fmt.Fprintf(out, format, args...)
-	fmt.Fprintln(out, "")
+	// DISABLED
 }
 
 func SF(sink LogSink, format string, args ...any) {
-	sink.Log("WARNING", format, args)
+	// DISABLED
 }
