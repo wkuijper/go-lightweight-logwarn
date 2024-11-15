@@ -1,5 +1,9 @@
 package logwarn
 
+import (
+	"io"
+)
+
 type LogSink interface {
 	// DISABLED
 }
