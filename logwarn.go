@@ -2,6 +2,7 @@ package logwarn
 
 import (
 	"fmt"
+	"io"
 	"os"
 )
 
